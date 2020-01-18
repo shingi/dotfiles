@@ -5,9 +5,9 @@
         protocol = https
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
+        promote = !$DF_PATH/bin/git-promote
+        wtf     = !$DF_PATH/bin/git-wtf
+        rank-contributors = !$DF_PATH/bin/git-rank-contributors
         count   = !git shortlog -sn
 [color]
         diff = auto
@@ -19,10 +19,19 @@
         editor = vim
 [apply]
         whitespace = nowarn
-[mergetool]
-        keepBackup = false
+
+[merge]
+    tool = meld
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+
+[diff]
+    tool = meld
 [difftool]
-        prompt = false
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
 [help]
         autocorrect = 1
 [push]
@@ -33,3 +42,4 @@
         default = simple
 [credential]
 	helper = osxkeychain
+
