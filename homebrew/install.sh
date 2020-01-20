@@ -24,15 +24,16 @@ fi
 # quick exit when no updates TODO find a wat to detect this.
 # exit 0
 
+echo "installing brew items"
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew tap \
-  domt4/chromium \
-  buo/cask-upgrade
+brew tap domt4/chromium
+brew tap buo/cask-upgrade
 
 brew install \
   coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep \
@@ -53,6 +54,8 @@ brew cask install \
   opera \
   sublime-text \
   docker
+
+brew cu
 
 # Remove outdated versions from the cellar.
 brew cleanup
