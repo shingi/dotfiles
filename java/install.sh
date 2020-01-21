@@ -1,4 +1,4 @@
-if [ ! -f ${HOME}/.sdkman ]; then
+if [ ! -e ${HOME}/.sdkman ]; then
   echo "  Installing sdkman for you."
   curl -s "https://get.sdkman.io" | bash
 fi
