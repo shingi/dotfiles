@@ -45,7 +45,6 @@ brew install \
   git
 
 brew cask install \
-  meld \
   mac-chromium \
   iterm2 \
   rectangle \

@@ -1,0 +1,24 @@
+#!/usr/bin/python
+
+import sys
+import os
+import subprocess
+
+MELDPATH = "/Applications/Meld.app"
+
+userArgs = []
+for arg in sys.argv[1:]:
+    if arg.startswith('--output'):
+        filename = arg.split('=')[1]
+        newArg = '--output=' + os.path.abspath(filename)
+    elif arg.startswith('-'):
+        newArg = arg
+    else:
+        newArg = os.path.abspath(arg)
+    userArgs.append(newArg)
+
+
+argsArray = ['open', '-W', '-a',  MELDPATH, '--args'] + userArgs
+print argsArray
+
+p = subprocess.call(argsArray)
