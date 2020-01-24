@@ -42,7 +42,8 @@ brew install \
   tree \
   vault \
   jq \
-  git
+  git \
+  sshuttle
 
 brew cask install \
   mac-chromium \
