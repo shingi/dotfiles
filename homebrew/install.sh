@@ -53,9 +53,10 @@ brew cask install \
   p4v \
   opera \
   sublime-text \
-  docker
+  docker \
+  insomnia
 
-brew cu
+brew cu -y
 
 # Remove outdated versions from the cellar.
 brew cleanup
