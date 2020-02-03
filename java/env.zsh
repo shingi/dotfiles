@@ -1,1 +1,1 @@
-export MAVEN_OPTS="-Xms256m -Xmx512m"
+export MAVEN_OPTS="-Xms1024m -Xmx3072m"
