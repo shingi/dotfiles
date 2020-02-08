@@ -20,9 +20,9 @@ if [ ! -e $DEST ]; then
 fi
 
 
-DEST=${ZSH_CUSTOM}/themes/plagiarism.zsh-theme
-if [ ! -e $DEST ]; then
-  ln -s "${DF_PATH}/oh-my-zsh/plagiarism.zsh-theme" $DEST
-fi
+# DEST=${ZSH_CUSTOM}/themes/plagiarism.zsh-theme
+# if [ ! -e $DEST ]; then
+#   ln -s "${DF_PATH}/oh-my-zsh/plagiarism.zsh-theme" $DEST
+# fi
 
 exit 0

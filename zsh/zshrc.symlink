@@ -55,5 +55,5 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 source "$HOME/.oh-my-zshrc"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/dasutherland/.sdkman"
-[[ -s "/Users/dasutherland/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dasutherland/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/Users/smutandwa/.sdkman"
+[[ -s "/Users/smutandwa/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smutandwa/.sdkman/bin/sdkman-init.sh"
