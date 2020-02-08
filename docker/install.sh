@@ -1,3 +1,8 @@
+if [ -x "$(command -v docker)" ]; then
+    echo "Docker is already installed, skipping install..."
+    exit 0
+fi
+
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository
 
 sudo apt install \
@@ -34,3 +39,5 @@ sudo docker run --rm hello-world
 
 sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 sudo chmod g+rwx "$HOME/.docker" -R
+
+exit 0

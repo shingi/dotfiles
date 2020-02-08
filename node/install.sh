@@ -1,3 +1,7 @@
+# ensure curl is installed
+sudo apt install curl
+
+
 if [ ! -e ${HOME}/.nvm ]; then
   echo "  Installing nvm for you."
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
